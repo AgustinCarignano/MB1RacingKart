@@ -4,7 +4,6 @@
   "description": "Project for MB1 Racing Kart created by students of CoderHouse",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sass-build": "sass --watch SASS/styles.scss:CSS/styles.css"
   },
   "keywords": [],

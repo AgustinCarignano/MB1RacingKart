@@ -4,22 +4,527 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./CSS/styles.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>MB1 Racing</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <nav class="header_navbar" id="navbar">
+        <figure class="header_brand" id="brandLink">
+          <a href="#">
+            <img
+              class="header_brand_img"
+              src="./assets/brand.svg"
+              alt="MB1 Racing logo"
+            />
+          </a>
+        </figure>
+        <div class="header_kart">
+          <img src="./assets/kart.svg" alt="" />
+        </div>
+        <ul
+          class="header_links header_links-mobile navbarIntial"
+          id="mobileNavbar"
+        >
+          <li class="header_links_item">
+            <a class="header_links_anchor" href="">SOBRE NOSOTROS</a>
+          </li>
+          <li class="header_links_item">
+            <a class="header_links_anchor" href="">FORMA PARTE</a>
+          </li>
+          <li class="header_links_item">
+            <a class="header_links_anchor" href="#achievements"
+              >NUESTROS LOGROS</a
+            >
+          </li>
+          <li class="header_links_item">
+            <a class="header_links_anchor" href="#aboutUs">CONTÁCTANOS</a>
+          </li>
+        </ul>
+        <button class="header_button" id="burgerBtn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+      </nav>
+    </header>
+    <ul class="header_links header_links-desktop" id="mobileNavbar">
+      <li class="header_links_item">
+        <a class="header_links_anchor" href="">SOBRE NOSOTROS</a>
+      </li>
+      <li class="header_links_item">
+        <a class="header_links_anchor" href="">FORMA PARTE</a>
+      </li>
+      <li class="header_links_item">
+        <a class="header_links_anchor" href="#achievements">NUESTROS LOGROS</a>
+      </li>
+      <li class="header_links_item">
+        <a class="header_links_anchor" href="#aboutUs">CONTÁCTANOS</a>
+      </li>
+    </ul>
 
     <main>
-      <section class="home"></section>
+      <section class="home">
+        <div class="home_container">
+          <button class="home_button">METODOLOGÍA</button>
+          <button class="home_button">FORMA PARTE</button>
+        </div>
+      </section>
+
       <article class="aboutUs"></article>
       <article class="joinUs"></article>
-      <section class="achievements"></section>
-      <section class="contactUs"></section>
+
+      <section class="achievements" id="achievements">
+        <h2 class="achievements_title">NUESTROS LOGROS</h2>
+
+        <div class="swiper achievements_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2013</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2013_1_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2013.webp"
+                    alt="Matias Bolvin con la copa de campeon, junto con los demás integrantes del podio"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Matías Bonvín Campeón de la categoría 125 Libre Internacional
+                  en el campeonato de Karting de Río Salado (KRS).
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2014</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2014_1_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2014_1.webp"
+                    alt="Matias Bolvin con la copa de campeon de la categoría 125 en el 2014"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Matías Bonvín Campeón de la categoría 125 Libre Internacional
+                  en el campeonato de Karting de Río Salado (KRS).
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2014</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2014_2_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2014_2.webp"
+                    alt="Matias Bolvin con la copa de campeon"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Matías Bonvín Campeón de la categoría 125 Libre Internacional
+                  en el campeonato de Karting de Río Salado (KRS).
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2015</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2015_1_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2015_1.webp"
+                    alt="Matias Bolvin en el lugar numero 1 del podio"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Matías Bonvín Campeón de la categoría 125 Libre Internacional
+                  en el campeonato de Karting de Río Salado (KRS).
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2015</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2015_2_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2015_2.webp"
+                    alt="Matias Bolvin en la vuelta de gracia, con la bandera de cuadros en mano"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Matías Bonvín Campeón de la categoría 125 Libre Internacional
+                  en el campeonato de Karting de Río Salado (KRS).
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2016</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2016_1_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2016_1.webp"
+                    alt="Matias Bolvin en el podio con la copa de subcampeon"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Matías Bonvín Sub-Campeón de la categoría 125 Libre
+                  Internacional en el campeonato de Karting de Río Salado (KRS).
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2017</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2017_1_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2017_1.webp"
+                    alt="Lacio Rodriguez con la copa de campeon de la categoria"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Lucio Rodriguez Campeón de la categoría 110 Escuela en el
+                  campeonato de Karting de Río Salado (KRS).
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2018</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2018_1_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2018_1.webp"
+                    alt="David Tosollini junto a Matias Bolvin con los trofeos en mano"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  David Tosollini Campeón de la categoría 125 Internacional
+                  Senior del campeonato de Karting de Río Salado (KRS).
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2019</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2019_1_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2019_1.webp"
+                    alt="Lucio Rodríguez festejando el subcampeonato en el podio"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Lucio Rodríguez Sub-Campeón de la categoría Micro del
+                  campeonato de asfalto ROTAX RMC GN.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2021</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2021_1_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2021_1.webp"
+                    alt="Matias Bolvin con el mono de competicion y su karting"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Matías Bonvín Campeón Máster de pilotos Open Kart.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2021</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2021_2_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2021_2.webp"
+                    alt="Tomas Chicco sobre el podio con la copa de campeon"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Tomas Chicco Campeón de la categoría 110 Escuela en el
+                  campeonato Open Kart Santafesino.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2022</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2022_1_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2022_1.webp"
+                    alt="Bautista Tavella con la placa de reconocimiento de campeon"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Bautista Tavella Sub-Campeón de la categoría Micro Max en el
+                  campeonato de asfalto ROTAX RMC GN.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2022</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2022_2_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2022_2.webp"
+                    alt="Kevin Ferreyra se sube al podio con la copa de campeon"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Kevin Ferreyra Campeón de la categoría 150 Juvenil en el
+                  campeonato Certamen Santafesino Karting (CSK).
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2022</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2022_3_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2022_3.webp"
+                    alt="Kevin Ferreyra y Matias Bolvin con las copas de subcampeon y campeon, respectivamente"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Kevin Ferreyra Sub-Campeón de la categoría 150 Juvenil y
+                  Matías Bonvín Campeón de la categoría 125 Libre Internacional.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="achievements_slide_title">2022</h4>
+              <figure class="achievements_slide_figure">
+                <picture class="achievements_slide_figure_picture">
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./assets/logros2022_4_large.webp"
+                    sizes="100%"
+                  />
+                  <img
+                    class="achievements_slide_figure_img"
+                    src="./assets/logros2022_4.webp"
+                    alt="Matias Bolvin recibe la placa de conmemoracion al ganar el bicampeonato"
+                  />
+                </picture>
+                <figcaption class="achievements_slide_figure_footer">
+                  Matías Bonvín Bi-Campeón de la categoría Master Max del
+                  campeonato de asfalto ROTAX RMC GN.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="swiper-pagination achievements_slider_pagination"></div>
+
+          <div class="achievements_slider_control control-prev">
+            <img src="./assets/sliderControl.svg" alt="" />
+          </div>
+          <div class="achievements_slider_control control-next">
+            <img src="./assets/sliderControl.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="contactUs" id="aboutUs">
+        <div class="contactUs_largeContainer">
+          <h2 class="contactUs_title">CONTÁCTANOS</h2>
+          <form class="contactUs_form" id="contactForm">
+            <p class="contactUs_form_text">
+              Si estás interesado en formar parte del equipo o buscás más
+              información, podés ponerte en contacto llenando el formulario o
+              simplimente clickeá en nuestro Link a Whatsapp.
+            </p>
+            <span
+              class="contactUs_form_alert contactUs_form_alert-hidden"
+              id="formAlert"
+              >Campos requeridos</span
+            >
+            <label class="contactUs_form_label" for="name">NOMBRE:</label>
+            <input
+              class="contactUs_form_input"
+              type="text"
+              name="nombre"
+              id="name"
+              placeholder="Ingresá tu Nombre Completo"
+            />
+            <label class="contactUs_form_label" for="email">E-MAIL:</label>
+            <input
+              class="contactUs_form_input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ingresá tu E-mail"
+            />
+            <label class="contactUs_form_label" for="phone">CELULAR:</label>
+            <input
+              class="contactUs_form_input"
+              type="tel"
+              name="telefono"
+              id="phone"
+              placeholder="Ingresá tu Número Telefónico"
+            />
+            <label class="contactUs_form_label" for="message">MENSAJE:</label>
+            <textarea
+              class="contactUs_form_input"
+              name="mensaje"
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Dejanos tu consulta..."
+            ></textarea>
+            <input class="contactUs_form_button" type="submit" value="ENVIAR" />
+          </form>
+          <div class="contactUs_modal contactUs_modal-hidden" id="modalWindow">
+            <div class="contactUs_modal_container">
+              <img
+                class="contactUs_modal_cross"
+                src="./assets/crossSimbol.svg"
+                alt=""
+                id="modalCross"
+              />
+              <h3 class="contactUs_modal_title">¡Gracias por contactarnos!</h3>
+              <p class="contactUs_modal_text">
+                Estaremos respondiendo tu consulta en breve.
+              </p>
+            </div>
+          </div>
+          <div class="contactUs_info">
+            <div class="contactUs_address">
+              <h2 class="contactUs_address_title">¿Dónde Estamos?</h2>
+              <iframe
+                class="contactUs_address_map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13685.555714564565!2d-61.5251664!3d-30.9596269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9435455c72b92971%3A0xc59fce29566dad95!2sKartodromo%20Sunchales!5e0!3m2!1ses-419!2ses!4v1684571059957!5m2!1ses-419!2ses"
+                width="400"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <p class="contactUs_address_text">
+                RUTA 34 km 254, Sunchales, Argentina
+              </p>
+            </div>
+            <div class="contactUs_media">
+              <h2 class="contactUs_media_title">SEGUINOS:</h2>
+              <div class="contactUs_media_container">
+                <a href="#"
+                  ><img
+                    class="contactUs_media_icon"
+                    src="./assets/facebookIcon.svg"
+                    alt="Icono de facebook"
+                /></a>
+                <a href="#"
+                  ><img
+                    class="contactUs_media_icon"
+                    src="./assets/instagramIcon.svg"
+                    alt="Icono de instagram"
+                /></a>
+                <div class="contactUs_media_icon-placeholder"></div>
+                <a href="#" class="contactUs_media_icon-wsp"
+                  ><img
+                    class="contactUs_media_icon"
+                    src="./assets/wspIcon.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./JS/index.js"></script>
+    <script src="./JS/slider.js"></script>
+    <script src="./JS/navbarBehaviour.js"></script>
+    <script src="./JS/formControl.js"></script>
   </body>
 </html>

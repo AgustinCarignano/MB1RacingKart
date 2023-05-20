@@ -1,0 +1,39 @@
+.home {
+  min-height: 100vh;
+  background-image: url("../assets/homeBackground.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+    padding-top: 50vh;
+  }
+  &_button {
+    background-color: #ee2028a6;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    width: 170px;
+    padding: 14px;
+    text-align: left;
+    @include fontBebas("20px", 400, "28px");
+  }
+}
+
+@media (min-width: 740px) {
+  .home {
+    min-height: calc(100vh - 110px);
+    &_container {
+      gap: 50px;
+      padding-top: 30vh;
+    }
+    &_button {
+      border-radius: 15px;
+      width: 445px;
+      padding: 20px;
+      font-size: 42px;
+    }
+  }
+}

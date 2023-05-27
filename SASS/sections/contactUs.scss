@@ -6,7 +6,7 @@
   }
   &_form {
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     padding: 10px;
     max-width: 400px;
     background-color: #000000cc;
@@ -208,6 +208,7 @@
     }
     &_form {
       max-width: unset;
+      margin: 0 auto;
       width: 100%;
       border-radius: 20px;
       padding: 20px 30px;
@@ -293,7 +294,7 @@
         }
         &-wsp {
           max-width: 80px;
-          right: 50px;
+          right: 45px;
           bottom: 65px;
         }
       }
@@ -311,7 +312,7 @@
       width: 80px;
     }
     &-wsp {
-      right: calc(50vw - 600px + 50px);
+      right: calc(50vw - 600px + 45px);
       bottom: 65px;
     }
   }

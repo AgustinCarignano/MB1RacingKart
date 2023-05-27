@@ -88,14 +88,6 @@
   display: none;
 }
 
-.sticky {
-  width: 100%;
-  height: 50px;
-  background-color: rebeccapurple;
-  position: sticky;
-  top: 0;
-}
-
 @media (min-width: 740px) {
   .navbarIntial {
     display: flex;
@@ -104,13 +96,19 @@
     position: relative;
     &_navbar {
       justify-content: flex-start;
-      gap: 200px;
     }
     &_brand_img {
       width: 192px;
     }
     &_kart {
-      display: inline-block;
+      display: flex;
+      &_car {
+        margin-left: -60px;
+        animation: moveKart 2s ease-in-out 0s 1 forwards;
+      }
+      &_lines {
+        animation: moveLines 2s ease-in-out 0.03s 1 forwards;
+      }
     }
     &_links {
       flex-direction: row;
@@ -119,7 +117,8 @@
       border-radius: 0;
       font-size: 30px;
       position: sticky;
-      top: 0;
+      margin-top: -1px;
+      top: -2px;
       z-index: 100;
       &_visible {
         animation: none;

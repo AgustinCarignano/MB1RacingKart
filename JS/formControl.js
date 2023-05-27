@@ -7,6 +7,7 @@ const formAlert = form.querySelector("#formAlert");
 const submitBtn = form.querySelector("input[type='submit']");
 const modalWindow = document.querySelector("#modalWindow");
 const modalCross = document.querySelector("#modalCross");
+const modalNameSpan = modalWindow.querySelector("#modalName");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -35,8 +36,10 @@ form.addEventListener("submit", async (e) => {
     // );
     // console.log(resp);
     setTimeout(() => {
+      const name = fullName.value.split(" "[1]);
       restoreForm();
-      modalWindow.classList.remove("contactUs_modal-hidden");
+      showMessage(name);
+      //modalWindow.classList.remove("contactUs_modal-hidden");
       closeModalBehaviour();
     }, 500);
     // restoreForm();
@@ -69,6 +72,11 @@ function checkForm() {
     isValid = false;
   }
   return isValid;
+}
+
+function showMessage(name) {
+  modalNameSpan.innerText = name;
+  modalWindow.classList.remove("contactUs_modal-hidden");
 }
 
 function closeModalBehaviour() {

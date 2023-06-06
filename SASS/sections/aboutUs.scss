@@ -1,0 +1,179 @@
+.aboutUs {
+  padding: 60px 0px 10px;
+  max-width: 962px;
+  margin: 0 auto;
+  &_title {
+    @include fontBebas(28px, 400, 36px);
+    text-align: center;
+    margin: 0 15px;
+  }
+  &_text {
+    @include fontKarla(16px, 400, 24px);
+    letter-spacing: 0.5%;
+    text-align: center;
+    margin: 0 15px;
+  }
+  &_img {
+    width: 80%;
+    margin: 20px auto;
+    & > img {
+      width: 100%;
+    }
+  }
+  &_section {
+    overflow: hidden;
+
+    &_title {
+      @include fontBebas(20px, 400, 28px);
+      padding: 10px 15px;
+      border: solid 1px black;
+      border-radius: 10px;
+      position: relative;
+      margin: 0 15px;
+      cursor: pointer;
+      & > span {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+        background-image: url("../assets/menuControl.svg");
+        background-position: center;
+        background-size: contain;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    &_subMenuSubTitle {
+      @include fontBebas(14px, 400, 28px);
+      text-align: center;
+    }
+    &_subMenuTitle {
+      @include fontBebas(20px, 400, 28px);
+      text-align: center;
+      margin: 0 15px;
+    }
+    &_container {
+      margin-top: 24px;
+      overflow: hidden;
+      height: 0px;
+      transition: all 0.5s ease-in-out;
+    }
+    &_img {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 12px 0;
+      & > img {
+        width: 60%;
+      }
+      &-whoWeAre {
+        background-image: url("../assets/aboutUsBg.png");
+      }
+      &-aboutMatias {
+        background-image: url("../assets/aboutUsBg_2.png");
+      }
+      &-methodology {
+        background-image: url("../assets/aboutUsBg_3.png");
+      }
+    }
+    &_text {
+      @include fontKarla(16px, 400, 24px);
+      letter-spacing: 0.005rem;
+      margin: 15px 25px;
+      text-align: center;
+    }
+    &_list {
+      padding: 0 32px;
+      & > p {
+        @include fontBebas(20px, 400, 28px);
+        text-align: left;
+      }
+      & > ul > li {
+        @include fontKarla(16px, 400, 24px);
+        letter-spacing: 0.005rem;
+        list-style: inside;
+        list-style-type: disc;
+      }
+    }
+    &_subContainer {
+      display: grid;
+      // flex-direction: column;
+      grid-template-rows: repeat(4, 1fr);
+      &_item {
+        @include fontBebas(16px, 400, 24px);
+        text-align: center;
+        margin: 0 0 -15px;
+      }
+    }
+  }
+  &_menuOpened > span {
+    transform: rotateX(180deg);
+  }
+}
+
+@media (min-width: 740px) {
+  .aboutUs {
+    padding-top: 80px;
+    &_title {
+      font-size: 42px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    &_text {
+      font-size: 22px;
+    }
+    &_section {
+      &_title {
+        font-size: 30px;
+      }
+      &_subMenuTitle {
+        font-size: 30px;
+      }
+      &_subMenuSubTitle {
+        font-size: 24px;
+        margin-top: 15px;
+      }
+      &_container {
+        margin-top: 32px;
+      }
+      &_text {
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: 0.009em;
+      }
+      &_list {
+        width: fit-content;
+        margin: 20px auto;
+        & > p {
+          font-size: 22px;
+        }
+        & > ul > li {
+          font-size: 22px;
+          margin: 15px 0;
+        }
+      }
+      &_subContainer {
+        // flex-direction: row-reverse;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 100px;
+        width: 85%;
+        margin: 30px auto;
+        &_item {
+          text-align: left;
+          font-size: 24px;
+          margin: 10px 0;
+        }
+        & > div > p {
+          text-align: left;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

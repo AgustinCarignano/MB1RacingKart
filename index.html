@@ -24,7 +24,7 @@
             />
           </a>
         </figure>
-        <div class="header_kart">
+        <div class="header_kart" id="kart">
           <img class="header_kart_lines" src="./assets/lines.svg" alt="" />
           <img class="header_kart_car" src="./assets/kart.svg" alt="" />
         </div>
@@ -33,7 +33,7 @@
           id="mobileNavbar"
         >
           <li class="header_links_item">
-            <a class="header_links_anchor" href="">SOBRE NOSOTROS</a>
+            <a class="header_links_anchor" href="#aboutUs">SOBRE NOSOTROS</a>
           </li>
           <li class="header_links_item">
             <a class="header_links_anchor" href="">FORMA PARTE</a>
@@ -44,7 +44,7 @@
             >
           </li>
           <li class="header_links_item">
-            <a class="header_links_anchor" href="#aboutUs">CONTÁCTANOS</a>
+            <a class="header_links_anchor" href="#contactUs">CONTÁCTANOS</a>
           </li>
         </ul>
         <button class="header_button" id="burgerBtn">
@@ -56,7 +56,7 @@
     </header>
     <ul class="header_links header_links-desktop" id="mobileNavbar">
       <li class="header_links_item">
-        <a class="header_links_anchor" href="">SOBRE NOSOTROS</a>
+        <a class="header_links_anchor" href="#aboutUs">SOBRE NOSOTROS</a>
       </li>
       <li class="header_links_item">
         <a class="header_links_anchor" href="">FORMA PARTE</a>
@@ -65,19 +65,215 @@
         <a class="header_links_anchor" href="#achievements">NUESTROS LOGROS</a>
       </li>
       <li class="header_links_item">
-        <a class="header_links_anchor" href="#aboutUs">CONTÁCTANOS</a>
+        <a class="header_links_anchor" href="#contactUs">CONTÁCTANOS</a>
       </li>
     </ul>
 
     <main>
       <section class="home">
         <div class="home_container">
-          <button class="home_button">METODOLOGÍA</button>
-          <button class="home_button">FORMA PARTE</button>
+          <button class="home_button">
+            <a href="#methodology" id="cta_methodology">METODOLOGÍA</a>
+          </button>
+          <button class="home_button">
+            <a href="">FORMA PARTE</a>
+          </button>
         </div>
       </section>
 
-      <article class="aboutUs"></article>
+      <article class="aboutUs" id="aboutUs">
+        <h2 class="aboutUs_title">SOBRE NOSOTROS</h2>
+        <p class="aboutUs_text">
+          En MB1 Racing Kart somos más que un equipo de competición, somos una
+          comunidad que comparte la misma pasión, las mismas ganas de crecer, de
+          viajar, de entrenar, de competir y de lograr ser mejores cada día.
+        </p>
+        <figcaption class="aboutUs_img">
+          <img
+            src="./assets/aboutUs.webp"
+            alt="Equipo de MB1 Reacing con corredores"
+          />
+        </figcaption>
+        <section class="aboutUs_section">
+          <h3 class="aboutUs_section_title">
+            QUIENES SOMOS
+            <span></span>
+          </h3>
+          <div class="aboutUs_section_container">
+            <h3 class="aboutUs_section_subMenuTitle">MB1 REACING KART</h3>
+            <figure class="aboutUs_section_img aboutUs_section_img-whoWeAre">
+              <img
+                src="./assets/aboutUs_1.webp"
+                alt="Los kartings del equipo MB1"
+              />
+            </figure>
+            <p class="aboutUs_section_text">
+              Somos un Equipo de Karting que nace en el mundo de la competición
+              en el año 2013 de la mano de la pasión de Matías Bonvin, actual
+              corredor y fundador del equipo.
+            </p>
+            <p class="aboutUs_section_text">
+              Gracias a éstos años de experiencia, en MB1 RACING KART, ofrecemos
+              diferentes tipos de servicios, en donde priman los conocimientos
+              técnicos y la sólida experiencia, para así, obtener el máximo
+              rendimiento acompañados por profesionales especializados. <br />
+              Si bien la competición es la esencia del karting y gran parte de
+              nuestra actividad en MB1 está dedicada al sector de las carreras,
+              no se trata sólo de la preparación del chasis para eventos
+              competitivos, sino también de formar pilotos de forma integral.
+            </p>
+            <p class="aboutUs_section_text">
+              En MB1 tenemos presencia en campeonatos zonales, en pistas de
+              tierra y desde el año 2019 en pistas de asfalto siendo su
+              escenario el Campeonato de Rotax Argentina. <br />
+              Nuestro Equipo está comprometido en brindar un servicio completo,
+              asegurándose de que los pilotos tengan las habilidades y las
+              herramientas necesarias para alcanzar su máximo potencial en cada
+              carrera.
+            </p>
+          </div>
+        </section>
+        <section class="aboutUs_section">
+          <h3 class="aboutUs_section_title">
+            Sobre Matías Bonvín
+            <span></span>
+          </h3>
+          <div class="aboutUs_section_container">
+            <h3 class="aboutUs_section_subMenuTitle">Matías Bonvín</h3>
+            <h6 class="aboutUs_section_subMenuSubTitle">
+              Piloto y director de equipo
+            </h6>
+            <figure class="aboutUs_section_img aboutUs_section_img-aboutMatias">
+              <img
+                src="./assets/aboutUs_2.webp"
+                alt="Matias trabajando en el motor de un karting"
+              />
+            </figure>
+            <p class="aboutUs_section_text">
+              Matías Bonvín, el fundador de nuestro equipo MB1 Racing Kart, es
+              una persona con habilidad, dedicación, fortaleza, pasión y empuje.
+              Apasionado y formado desde niño por el deporte, en el año 2007,
+              con 21 años de edad, se inició como piloto de karting en la
+              categoría súper promo con motores Zanella 125 cc, participando en
+              diversos campeonatos de karting, incluyendo el Litoral
+              Santafesino, Este Cordobés, Provincial Cordobés y Río Salado.
+            </p>
+            <p class="aboutUs_section_text">
+              En 2013, hizo su debut en la máxima categoría de Kart en
+              escenarios de tierra, 125cc libre internacional y continúa
+              compitiendo en ella en la actualidad. En su amplia trayectoria
+              como piloto ha participando en múltiples campeonatos: KRS, AZKRU
+              Entrerriano, Racing Kart, Provincial Cordobés, Karting Chaqueño,
+              Open Karts Santafesino, Certamen Santafesino de Karting, , Karting
+              de Río Salado y KDC Bs. As. Entre sus logros en la pista se
+              destacan:
+            </p>
+            <div class="aboutUs_section_list">
+              <p><strong>Títulos:</strong></p>
+              <ul>
+                <li>2013-2014-2015 Campeón - Karting de Río Salado.</li>
+                <li>2015 Segundo Puesto - Master de Pilotos Centeno.</li>
+                <li>2016 Sub Campeón - Karting de Río Salado.</li>
+                <li>2017 Cuarto Puesto - Karting de Río Salado.</li>
+                <li>2020 Campeón - Master de Pilotos Gálvez.</li>
+                <li>2021 Sub Campeón - Open Kart Santafesino.</li>
+                <li>2022 Campeón - Open Kart Santafesino.</li>
+              </ul>
+            </div>
+            <p class="aboutUs_section_text">
+              En el año 2019 Matías se plantea un nuevo desafío deportivo:
+              Competir a nivel nacional en la categoría de asfalto ROTAX,
+              haciéndolo de manera simultánea en campeonatos con pistas de
+              tierra. En el año 2021 se consagra Bi-Campeón Nacional de ROTAX
+              GRAN NATIONAL en la categoría Master Max. <br />En constante
+              búsqueda de nuevos desafíos, Matías participa actualmente en ROTAX
+              ARGENTINA, este año en la máxima categoría de asfalto, DD2.
+            </p>
+            <p class="aboutUs_section_text">
+              Toda su trayectoria lo acerca desde el año 2013 a desempeñarse,
+              simultáneamente, como instructor de pilotos consiguiendo grandes
+              logros en el equipo.
+            </p>
+          </div>
+        </section>
+        <section class="aboutUs_section" id="methodology">
+          <h3 class="aboutUs_section_title">
+            Nuestra metodología
+            <span></span>
+          </h3>
+          <div class="aboutUs_section_container">
+            <h3 class="aboutUs_section_subMenuTitle">Metodología mb1</h3>
+            <p class="aboutUs_section_text">
+              Somos un equipo que se atreve a ser diferente y forjar un nuevo
+              camino, ofreciendo a nuestros clientes una metodología de trabajo
+              integral. 
+            </p>
+            <figure class="aboutUs_section_img aboutUs_section_img-methodology">
+              <img
+                src="./assets/aboutUs_3.webp"
+                alt="Charlas de formacion a alumnos de MB1 racing"
+              />
+            </figure>
+            <p class="aboutUs_section_text">
+              Nuestra metodología se sustenta en cuatro pilares fundamentales:
+            </p>
+            <div class="aboutUs_section_subContainer">
+              <div>
+                <h6 class="aboutUs_section_subContainer_item">
+                  Adquisición de datos
+                </h6>
+                <p class="aboutUs_section_text">
+                  Performance del piloto y del motor
+                </p>
+              </div>
+              <div>
+                <h6 class="aboutUs_section_subContainer_item">
+                  Asesoramiento nutricional
+                </h6>
+                <p class="aboutUs_section_text">
+                  Previo, durante y post carrera
+                </p>
+              </div>
+              <div>
+                <h6 class="aboutUs_section_subContainer_item">
+                  Asesoramiento físico
+                </h6>
+                <p class="aboutUs_section_text">Indicaciones personalizadas</p>
+              </div>
+              <div>
+                <h6 class="aboutUs_section_subContainer_item">
+                  Asesoramiento psicológico
+                </h6>
+                <p class="aboutUs_section_text">Dentro y fuera de la pista</p>
+              </div>
+            </div>
+            <p class="aboutUs_section_text">
+              En MB1 no solo nos desempeñamos en el ámbito de las carreras,
+              mejorando aspectos técnicos sobre la conducción del karting y
+              funcionamiento de chasis. <br />Nuestro máximo esfuerzo y trabajo
+              está destinado a formar pilotos, desde aspectos técnicos y de
+              conducción hasta aspectos psico-físicos y de nutrición.
+            </p>
+            <p class="aboutUs_section_text">
+              Nuestra instrucción se basa en clases teórico-prácticas
+              personalizadas, donde el alumno experimenta la verdadera esencia
+              de la conducción deportiva y aprende los secretos de la relación
+              hombre-máquina-pista. Este enfoque es fundamental para brindar
+              conocimientos y experiencia a aquellos que deseen iniciar su
+              carrera deportiva y también para pilotos con experiencia previa.
+            </p>
+            <p class="aboutUs_section_text">
+              En MB1 buscamos formar pilotos completos y brindar un servicio
+              integral para que puedan desarrollar todo su potencial en el mundo
+              del karting.
+            </p>
+            <p class="aboutUs_section_text">
+              "No ofrecemos un resultado, ofrecemos una metodología, un estilo
+              de vida."
+            </p>
+          </div>
+        </section>
+      </article>
       <article class="joinUs"></article>
 
       <section class="achievements" id="achievements">
@@ -411,7 +607,7 @@
         </div>
       </section>
 
-      <section class="contactUs" id="aboutUs">
+      <section class="contactUs" id="contactUs">
         <div class="contactUs_largeContainer">
           <h2 class="contactUs_title">CONTÁCTANOS</h2>
           <form class="contactUs_form" id="contactForm">
@@ -528,6 +724,7 @@
     <script src="./JS/index.js"></script>
     <script src="./JS/slider.js"></script>
     <script src="./JS/navbarBehaviour.js"></script>
+    <script src="./JS/dropDownMenu.js"></script>
     <script src="./JS/formControl.js"></script>
   </body>
 </html>

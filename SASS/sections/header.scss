@@ -104,9 +104,14 @@
       display: flex;
       &_car {
         margin-left: -60px;
+      }
+    }
+    &_moveKart {
+      & > .header_kart_car {
+        margin-left: -60px;
         animation: moveKart 2s ease-in-out 0s 1 forwards;
       }
-      &_lines {
+      & > .header_kart_lines {
         animation: moveLines 2s ease-in-out 0.03s 1 forwards;
       }
     }

@@ -28,9 +28,12 @@
       & > img {
         width: 100%;
       }
+      &:active {
+        transform: scale(0.9);
+      }
     }
     & .control-prev {
-      transform: rotate(180deg);
+      rotate: 180deg;
       left: 0;
     }
     & .control-next {

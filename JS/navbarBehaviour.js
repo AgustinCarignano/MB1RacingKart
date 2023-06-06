@@ -1,6 +1,7 @@
 const navButton = document.querySelector("#burgerBtn");
 const navbarLinks = document.querySelector("#mobileNavbar");
 const brand = document.querySelector("#brandLink");
+const kart = document.querySelector("#kart");
 
 navButton.addEventListener("click", () => {
   togleNavbar();
@@ -33,3 +34,7 @@ function togleNavbar() {
     navButton.classList.add("header_button-opened");
   }
 }
+
+setTimeout(() => {
+  kart.classList.add("header_moveKart");
+}, 1000);

@@ -1,0 +1,197 @@
+.joinUs {
+  padding: 60px 0px 10px;
+  max-width: 962px;
+  margin: 0 auto;
+  &_title {
+    @include fontBebas(28px, 400, 36px);
+    text-align: center;
+    margin: 0 15px;
+  }
+  &_text {
+    @include fontKarla(16px, 400, 24px);
+    letter-spacing: 0.5%;
+    text-align: center;
+    margin: 0 15px;
+  }
+  &_img {
+    width: 80%;
+    margin: 20px auto;
+    & > img {
+      width: 100%;
+    }
+  }
+  &_section {
+    overflow: hidden;
+
+    &_title {
+      @include fontBebas(20px, 400, 28px);
+      padding: 10px 15px;
+      border: solid 1px black;
+      border-radius: 10px;
+      position: relative;
+      margin: 0 15px;
+      cursor: pointer;
+      & > span {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+        background-image: url("../assets/menuControl.svg");
+        background-position: center;
+        background-size: contain;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    &_subMenuSubTitle {
+      @include fontBebas(14px, 400, 28px);
+      text-align: center;
+    }
+    &_subMenuTitle {
+      @include fontBebas(20px, 400, 28px);
+      text-align: center;
+      margin: 0 15px;
+      & > span {
+        display: none;
+      }
+    }
+    &_container {
+      margin-top: 24px;
+      overflow: hidden;
+      height: 0px;
+      transition: all 0.5s ease-in-out;
+    }
+    &_titleContainer {
+      display: flex;
+      flex-direction: column;
+    }
+    &_img {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 12px 0;
+      & > img {
+        width: 60%;
+      }
+      &-whoWeAre {
+        background-image: url("../assets/aboutUsBg.png");
+      }
+      &-aboutMatias {
+        background-image: url("../assets/aboutUsBg_2.png");
+      }
+      &-methodology {
+        background-image: url("../assets/aboutUsBg_3.png");
+      }
+    }
+    &_text {
+      @include fontKarla(16px, 400, 24px);
+      letter-spacing: 0.005rem;
+      margin: 15px 25px;
+      text-align: center;
+    }
+    &_listContainer {
+      display: flex;
+      flex-direction: column;
+    }
+    &_list {
+      padding: 0px 32px 30px;
+      & > p {
+        @include fontBebas(20px, 400, 28px);
+        text-align: left;
+      }
+      & > ul > li {
+        @include fontKarla(16px, 400, 24px);
+        letter-spacing: 0.005rem;
+        list-style: georgian;
+        list-style-type: disc;
+        margin-left: 20px;
+        padding-left: 5px;
+      }
+    }
+  }
+  &_menuOpened > span {
+    transform: rotateX(180deg);
+  }
+}
+
+@media (min-width: 740px) {
+  .joinUs {
+    padding-top: 80px;
+    &_title {
+      font-size: 42px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    &_text {
+      font-size: 22px;
+    }
+    &_img {
+      margin-bottom: 42px;
+    }
+    &_section {
+      &_title {
+        font-size: 30px;
+      }
+      &_subMenuTitle {
+        font-size: 30px;
+        & > span {
+          display: inline;
+        }
+      }
+      &_subMenuSubTitle {
+        @include fontBebas(30px, 400, 28px);
+        margin: 0;
+      }
+      &_container {
+        margin-top: 32px;
+      }
+      &_titleContainer {
+        flex-direction: row;
+        justify-content: center;
+      }
+      &_text {
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: 0.009em;
+      }
+      &_listContainer {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      &_list {
+        width: 100%;
+        margin: 20px 20px;
+        & > p {
+          font-size: 22px;
+        }
+        & > ul > li {
+          font-size: 22px;
+          margin: 5px 0;
+          line-height: 38px;
+        }
+      }
+      &_subContainer {
+        // flex-direction: row-reverse;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 100px;
+        width: 85%;
+        margin: 30px auto;
+        &_item {
+          text-align: left;
+          font-size: 24px;
+          margin: 10px 0;
+        }
+        & > div > p {
+          text-align: left;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

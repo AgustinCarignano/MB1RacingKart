@@ -1,5 +1,8 @@
-const menuButtons = document.querySelectorAll(".aboutUs_section_title");
+const menuAboutButtons = document.querySelectorAll(".aboutUs_section_title");
+const menuJoinButtons = document.querySelectorAll(".joinUs_section_title");
 const cta_methodology = document.querySelector("#cta_methodology");
+
+const menuButtons = [...menuAboutButtons, ...menuJoinButtons];
 
 for (let i = 0; i < menuButtons.length; i++) {
   menuButtons[i].addEventListener("click", () => {

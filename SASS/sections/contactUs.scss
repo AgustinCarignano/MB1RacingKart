@@ -1,5 +1,5 @@
 .contactUs {
-  //min-height: 100vh;
+  min-height: 100vh;
   padding: 60px 10px 0;
   &_title {
     @extend .achievements_title;
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 5px;
+    gap: 3px;
     &_text {
       display: none;
       @include fontKarla(22px, 400, 38px);
@@ -37,7 +37,26 @@
       border: none;
       border-radius: 6px;
       outline: none;
-      margin-bottom: 3px;
+    }
+    &_inputContainer {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      & > span {
+        display: none;
+        @include fontInter(12px, 400, 20px);
+        color: #f42b14;
+        background-color: #000;
+        border-radius: 5px;
+        padding: 0 5px;
+        width: fit-content;
+      }
+      &-alert {
+        margin-bottom: 0px;
+        & > span {
+          display: inline-block;
+        }
+      }
     }
     &_button {
       padding: 5px 40px;
@@ -52,19 +71,6 @@
     & > textarea {
       resize: none;
       font-size: 16.5px;
-    }
-    &_alert {
-      @include fontInter(14px, 400, 20px);
-      color: #f42b14;
-      background-color: #000;
-      border-radius: 5px;
-      padding: 4px 5px;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      &-hidden {
-        display: none;
-      }
     }
   }
   &_modal {
@@ -159,15 +165,17 @@
       border-radius: 6px;
     }
     &_container {
+      width: 90%;
       margin: 25px 0;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       gap: 40px;
     }
     &_icon {
       width: 48px;
       &-placeholder {
-        display: none;
+        width: 48px;
+        display: inline-block;
       }
       &-wsp {
         position: fixed;
@@ -180,16 +188,12 @@
   }
 }
 
-.inputAlert {
-  outline: solid 1px red;
-}
-
 @media (min-width: 740px) {
   .contactUs {
     margin-top: 50px;
     background-image: url("../assets/footerBackground.webp");
     background-size: cover;
-    padding: 40px 10px;
+    padding: 175px 10px 40px;
     &_largeContainer {
       display: grid;
       grid-template-columns: 6fr 4fr;
@@ -212,7 +216,7 @@
       width: 100%;
       border-radius: 20px;
       padding: 20px 30px;
-      gap: 0px;
+      gap: 3px;
       &_text {
         display: inline-block;
       }
@@ -225,7 +229,16 @@
       &_input {
         font-size: 20px;
         padding: 10px;
-        margin-bottom: 20px;
+      }
+      &_inputContainer {
+        margin-bottom: 30px;
+        & > span {
+          font-size: 20px;
+          padding: 3px 5px;
+        }
+        &-alert {
+          margin-bottom: 4px;
+        }
       }
       &_button {
         font-size: 24px;
@@ -300,9 +313,6 @@
       }
     }
   }
-  .inputAlert {
-    outline: solid 2px red;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -314,6 +324,32 @@
     &-wsp {
       right: calc(50vw - 600px + 45px);
       bottom: 65px;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .contactUs {
+    &_largeContainer {
+      max-width: 1700px;
+    }
+    &_title {
+      margin-left: calc(32.8vw - 403px);
+    }
+    &_form {
+      max-width: 700px;
+    }
+    &_media_icon-wsp {
+      right: calc(50vw - 790px);
+      bottom: 110px;
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .contactUs {
+    &_title {
+      margin-left: 160px;
     }
   }
 }

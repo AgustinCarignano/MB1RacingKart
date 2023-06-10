@@ -3,8 +3,10 @@ const fullName = form.querySelector("#name");
 const email = form.querySelector("#email");
 const phone = form.querySelector("#phone");
 const message = form.querySelector("#message");
-const formAlert = form.querySelector("#formAlert");
 const submitBtn = form.querySelector("input[type='submit']");
+const nameContainer = document.querySelector("#nameContainer");
+const emailContainer = document.querySelector("#emailContainer");
+const phoneContainer = document.querySelector("#phoneContainer");
 const modalWindow = document.querySelector("#modalWindow");
 const modalCross = document.querySelector("#modalCross");
 const modalNameSpan = modalWindow.querySelector("#modalName");
@@ -51,23 +53,23 @@ form.addEventListener("submit", async (e) => {
 function checkForm() {
   let isValid = true;
   if (!fullName.value) {
-    fullName.classList.add("inputAlert");
+    nameContainer.classList.add("contactUs_form_inputContainer-alert");
     fullName.addEventListener("keydown", () => {
-      fullName.classList.remove("inputAlert");
+      nameContainer.classList.remove("contactUs_form_inputContainer-alert");
     });
     isValid = false;
   }
   if (!email.value) {
-    email.classList.add("inputAlert");
+    emailContainer.classList.add("contactUs_form_inputContainer-alert");
     email.addEventListener("keydown", () => {
-      email.classList.remove("inputAlert");
+      emailContainer.classList.remove("contactUs_form_inputContainer-alert");
     });
     isValid = false;
   }
   if (!phone.value) {
-    phone.classList.add("inputAlert");
+    phoneContainer.classList.add("contactUs_form_inputContainer-alert");
     phone.addEventListener("keydown", () => {
-      phone.classList.remove("inputAlert");
+      phoneContainer.classList.remove("contactUs_form_inputContainer-alert");
     });
     isValid = false;
   }

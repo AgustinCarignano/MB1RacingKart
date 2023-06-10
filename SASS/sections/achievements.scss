@@ -1,5 +1,5 @@
 .achievements {
-  //min-height: 100vh;
+  min-height: 100vh;
   padding: 60px 10px;
   max-width: 400px;
   margin: 0 auto;
@@ -15,7 +15,7 @@
     & .swiper-pagination {
       position: absolute;
       top: 330px;
-      padding-top: calc(100% - 350px);
+      padding-top: calc(100% - 300px);
       & .swiper-pagination-bullet {
         background-color: #000;
       }
@@ -23,7 +23,7 @@
     &_control {
       width: 25px;
       position: absolute;
-      top: 175px;
+      top: 200px;
       z-index: 10;
       & > img {
         width: 100%;
@@ -43,6 +43,7 @@
   &_slide {
     &_title {
       @extend .achievements_title;
+      margin-top: 20px;
     }
     &_figure {
       display: flex;
@@ -50,8 +51,8 @@
       justify-content: space-between;
       align-items: center;
       width: 80%;
-      margin: 0 auto;
-      gap: 50px;
+      margin: 30px auto;
+      gap: 70px;
       &_picture {
         width: 100%;
         overflow: hidden;
@@ -75,13 +76,13 @@
 @media (min-width: 740px) {
   .achievements {
     max-width: 1050px;
-    padding: 80px 10px;
+    padding: 175px 10px 80px;
     &_title {
       font-size: 42px;
       text-align: left;
     }
     &_slider {
-      padding-bottom: 80px;
+      padding-bottom: 60px;
       & .swiper-pagination {
         padding: 0;
         top: unset;
@@ -103,11 +104,11 @@
       }
       & .control-prev {
         left: 30px;
-        padding-bottom: calc((100% - 750px) / 5);
+        padding-bottom: calc((100% - 600px) / 5);
       }
       & .control-next {
         right: 30px;
-        padding-top: calc((100% - 750px) / 5);
+        padding-top: calc((100% - 600px) / 5);
       }
     }
     &_slide {
@@ -116,7 +117,7 @@
         text-align: center;
       }
       &_figure {
-        gap: 35px;
+        gap: 50px;
         &_picture {
           aspect-ratio: 16/9;
         }

@@ -254,17 +254,18 @@ a:visited {
   .navbarIntial {
     display: flex;
   }
-  .header {
-    position: relative;
-  }
   .header_navbar {
     justify-content: flex-start;
+  }
+  .header_brand {
+    z-index: 10;
   }
   .header_brand_img {
     width: 192px;
   }
   .header_kart {
     display: flex;
+    margin-left: -35px;
   }
   .header_kart_car {
     margin-left: -60px;
@@ -282,9 +283,6 @@ a:visited {
     animation: none;
     border-radius: 0;
     font-size: 30px;
-    position: sticky;
-    margin-top: -1px;
-    top: -2px;
     z-index: 100;
   }
   .header_links_visible {
@@ -295,6 +293,7 @@ a:visited {
   }
   .header_links-desktop {
     display: flex;
+    margin-top: 51px;
   }
   .header_button {
     display: none;
@@ -321,15 +320,20 @@ a:visited {
   width: 170px;
   padding: 14px;
   text-align: left;
-  font-size: "20px";
+  font-size: 20px;
   font-weight: 400;
-  line-height: "28px";
+  line-height: 28px;
   font-family: "Bebas Neue", sans-serif;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+.home_button:hover {
+  background-color: rgba(238, 32, 39, 0.8117647059);
 }
 
 @media (min-width: 740px) {
   .home {
-    min-height: calc(100vh - 110px - 60px + 3px);
+    min-height: 100vh;
   }
   .home_container {
     gap: 50px;
@@ -338,8 +342,9 @@ a:visited {
   .home_button {
     border-radius: 15px;
     width: 445px;
-    padding: 20px;
+    padding: 35px 20px;
     font-size: 42px;
+    line-height: 42px;
   }
 }
 .aboutUs {
@@ -488,7 +493,8 @@ a:visited {
 
 @media (min-width: 740px) {
   .aboutUs {
-    padding-top: 80px;
+    max-width: 1050px;
+    padding-top: 175px;
   }
   .aboutUs_title {
     font-size: 42px;
@@ -665,6 +671,7 @@ a:visited {
 .joinUs_section_listContainer {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 .joinUs_section_list {
   padding: 0px 32px 30px;
@@ -693,7 +700,8 @@ a:visited {
 
 @media (min-width: 740px) {
   .joinUs {
-    padding-top: 80px;
+    padding-top: 175px;
+    max-width: 1050px;
   }
   .joinUs_title {
     font-size: 42px;
@@ -737,6 +745,10 @@ a:visited {
   .joinUs_section_listContainer {
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 50px;
+  }
+  .joinUs_section_listContainer > div {
+    margin: 0 0 0 75px;
   }
   .joinUs_section_list {
     width: 100%;
@@ -769,6 +781,7 @@ a:visited {
   }
 }
 .achievements {
+  min-height: 100vh;
   padding: 60px 10px;
   max-width: 400px;
   margin: 0 auto;
@@ -789,7 +802,7 @@ a:visited {
 .achievements_slider .swiper-pagination {
   position: absolute;
   top: 330px;
-  padding-top: calc(100% - 350px);
+  padding-top: calc(100% - 300px);
 }
 .achievements_slider .swiper-pagination .swiper-pagination-bullet {
   background-color: #000;
@@ -797,7 +810,7 @@ a:visited {
 .achievements_slider_control {
   width: 25px;
   position: absolute;
-  top: 175px;
+  top: 200px;
   z-index: 10;
 }
 .achievements_slider_control > img {
@@ -813,14 +826,17 @@ a:visited {
 .achievements_slider .control-next {
   right: 0;
 }
+.achievements_slide_title {
+  margin-top: 20px;
+}
 .achievements_slide_figure {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  margin: 0 auto;
-  gap: 50px;
+  margin: 30px auto;
+  gap: 70px;
 }
 .achievements_slide_figure_picture {
   width: 100%;
@@ -845,14 +861,14 @@ a:visited {
 @media (min-width: 740px) {
   .achievements {
     max-width: 1050px;
-    padding: 80px 10px;
+    padding: 175px 10px 80px;
   }
   .achievements_title, .contactUs_title, .achievements_slide_title {
     font-size: 42px;
     text-align: left;
   }
   .achievements_slider {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
   .achievements_slider .swiper-pagination {
     padding: 0;
@@ -875,18 +891,18 @@ a:visited {
   }
   .achievements_slider .control-prev {
     left: 30px;
-    padding-bottom: calc((100% - 750px) / 5);
+    padding-bottom: calc((100% - 600px) / 5);
   }
   .achievements_slider .control-next {
     right: 30px;
-    padding-top: calc((100% - 750px) / 5);
+    padding-top: calc((100% - 600px) / 5);
   }
   .achievements_slide_title {
     font-size: 24px;
     text-align: center;
   }
   .achievements_slide_figure {
-    gap: 35px;
+    gap: 50px;
   }
   .achievements_slide_figure_picture {
     aspect-ratio: 16/9;
@@ -902,6 +918,7 @@ a:visited {
   }
 }
 .contactUs {
+  min-height: 100vh;
   padding: 60px 10px 0;
 }
 .contactUs_form {
@@ -914,7 +931,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 5px;
+  gap: 3px;
 }
 .contactUs_form_text {
   display: none;
@@ -947,7 +964,29 @@ a:visited {
   border: none;
   border-radius: 6px;
   outline: none;
-  margin-bottom: 3px;
+}
+.contactUs_form_inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.contactUs_form_inputContainer > span {
+  display: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Inter", sans-serif;
+  color: #f42b14;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 0 5px;
+  width: fit-content;
+}
+.contactUs_form_inputContainer-alert {
+  margin-bottom: 0px;
+}
+.contactUs_form_inputContainer-alert > span {
+  display: inline-block;
 }
 .contactUs_form_button {
   padding: 5px 40px;
@@ -965,22 +1004,6 @@ a:visited {
 .contactUs_form > textarea {
   resize: none;
   font-size: 16.5px;
-}
-.contactUs_form_alert {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  font-family: "Inter", sans-serif;
-  color: #f42b14;
-  background-color: #000;
-  border-radius: 5px;
-  padding: 4px 5px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-.contactUs_form_alert-hidden {
-  display: none;
 }
 .contactUs_modal {
   position: fixed;
@@ -1090,16 +1113,18 @@ a:visited {
   border-radius: 6px;
 }
 .contactUs_media_container {
+  width: 90%;
   margin: 25px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
 }
 .contactUs_media_icon {
   width: 48px;
 }
 .contactUs_media_icon-placeholder {
-  display: none;
+  width: 48px;
+  display: inline-block;
 }
 .contactUs_media_icon-wsp {
   position: fixed;
@@ -1109,16 +1134,12 @@ a:visited {
   display: block;
 }
 
-.inputAlert {
-  outline: solid 1px red;
-}
-
 @media (min-width: 740px) {
   .contactUs {
     margin-top: 50px;
     background-image: url("../assets/footerBackground.webp");
     background-size: cover;
-    padding: 40px 10px;
+    padding: 175px 10px 40px;
   }
   .contactUs_largeContainer {
     display: grid;
@@ -1142,7 +1163,7 @@ a:visited {
     width: 100%;
     border-radius: 20px;
     padding: 20px 30px;
-    gap: 0px;
+    gap: 3px;
   }
   .contactUs_form_text {
     display: inline-block;
@@ -1156,7 +1177,16 @@ a:visited {
   .contactUs_form_input {
     font-size: 20px;
     padding: 10px;
-    margin-bottom: 20px;
+  }
+  .contactUs_form_inputContainer {
+    margin-bottom: 30px;
+  }
+  .contactUs_form_inputContainer > span {
+    font-size: 20px;
+    padding: 3px 5px;
+  }
+  .contactUs_form_inputContainer-alert {
+    margin-bottom: 4px;
   }
   .contactUs_form_button {
     font-size: 24px;
@@ -1223,9 +1253,6 @@ a:visited {
     right: 45px;
     bottom: 65px;
   }
-  .inputAlert {
-    outline: solid 2px red;
-  }
 }
 @media (min-width: 1200px) {
   .contactUs_media_icon {
@@ -1237,6 +1264,26 @@ a:visited {
   .contactUs_media_icon-wsp {
     right: calc(50vw - 600px + 45px);
     bottom: 65px;
+  }
+}
+@media (min-width: 1500px) {
+  .contactUs_largeContainer {
+    max-width: 1700px;
+  }
+  .contactUs_title {
+    margin-left: calc(32.8vw - 403px);
+  }
+  .contactUs_form {
+    max-width: 700px;
+  }
+  .contactUs_media_icon-wsp {
+    right: calc(50vw - 790px);
+    bottom: 110px;
+  }
+}
+@media (min-width: 1700px) {
+  .contactUs_title {
+    margin-left: 160px;
   }
 }
 

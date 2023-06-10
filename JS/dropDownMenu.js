@@ -1,6 +1,9 @@
 const menuAboutButtons = document.querySelectorAll(".aboutUs_section_title");
 const menuJoinButtons = document.querySelectorAll(".joinUs_section_title");
 const cta_methodology = document.querySelector("#cta_methodology");
+const cta_joinUs = document.querySelector("#cta_joinUs");
+//import "./linkBounce.js";
+//const moveTofunction = require(moveToSection);
 
 const menuButtons = [...menuAboutButtons, ...menuJoinButtons];
 
@@ -20,8 +23,15 @@ for (let i = 0; i < menuButtons.length; i++) {
   });
 }
 
-cta_methodology.addEventListener("click", () => {
+cta_methodology.addEventListener("click", (e) => {
+  e.preventDefault();
+  const bounce = window.screen.width > 740 ? 150 : 50;
+  moveToSection(cta_methodology, 50, bounce);
   callToAction("methodology");
+});
+cta_joinUs.addEventListener("click", (e) => {
+  e.preventDefault();
+  moveToSection(cta_joinUs, 50);
 });
 
 function callToAction(sectionId) {

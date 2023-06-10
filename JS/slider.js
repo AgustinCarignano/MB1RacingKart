@@ -17,9 +17,10 @@ const swiper = new Swiper(".swiper", {
 
   autoHeight: true,
 
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
 
   breakpoints: {
     1200: {

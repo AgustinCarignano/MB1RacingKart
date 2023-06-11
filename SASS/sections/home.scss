@@ -30,10 +30,9 @@
 @media (min-width: 740px) {
   .home {
     min-height: 100vh;
-    // min-height: calc(100vh - 110px - 60px + 3px);
     &_container {
       gap: 50px;
-      padding: 30vh 0;
+      padding: 43vh 0;
     }
     &_button {
       border-radius: 15px;

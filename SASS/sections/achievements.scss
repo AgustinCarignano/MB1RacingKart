@@ -4,7 +4,7 @@
   max-width: 400px;
   margin: 0 auto;
   &_title {
-    @include fontBebas(20px, 400, 28px);
+    @include fontBebas(28px, 400, 36px);
     color: #000;
     text-align: center;
     margin: 5px auto;
@@ -75,7 +75,7 @@
 
 @media (min-width: 740px) {
   .achievements {
-    max-width: 1050px;
+    max-width: 950px;
     padding: 175px 10px 80px;
     &_title {
       font-size: 42px;
@@ -132,5 +132,11 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 2000px) {
+  .achievements {
+    min-height: unset;
   }
 }

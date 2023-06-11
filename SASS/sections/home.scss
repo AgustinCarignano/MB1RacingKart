@@ -1,8 +1,7 @@
 .home {
   min-height: 100vh;
-  background-image: url("../assets/homeBackground.webp");
+  background-image: url("../assets/homeBackground_1.webp");
   background-size: cover;
-  background-attachment: fixed;
   &_container {
     display: flex;
     flex-direction: column;
@@ -29,10 +28,11 @@
 
 @media (min-width: 740px) {
   .home {
-    min-height: 100vh;
+    // min-height: calc(100vh - 300px);
     &_container {
       gap: 50px;
-      padding: 43vh 0;
+      padding-top: 43vh;
+      //padding: 43vh 0;
     }
     &_button {
       border-radius: 15px;

@@ -65,28 +65,6 @@
       display: flex;
       flex-direction: column;
     }
-    &_img {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      margin: 12px 0;
-      & > img {
-        width: 60%;
-      }
-      &-whoWeAre {
-        background-image: url("../assets/aboutUsBg.png");
-      }
-      &-aboutMatias {
-        background-image: url("../assets/aboutUsBg_2.png");
-      }
-      &-methodology {
-        background-image: url("../assets/aboutUsBg_3.png");
-      }
-    }
     &_text {
       @include fontKarla(16px, 400, 24px);
       letter-spacing: 0.005rem;

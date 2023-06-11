@@ -301,7 +301,7 @@ a:visited {
 }
 .home {
   min-height: 100vh;
-  background-image: url("../assets/homeBackground.webp");
+  background-image: url("../assets/homeBackground_1.webp");
   background-size: cover;
 }
 .home_container {
@@ -331,12 +331,9 @@ a:visited {
 }
 
 @media (min-width: 740px) {
-  .home {
-    min-height: 100vh;
-  }
   .home_container {
     gap: 50px;
-    padding: 43vh 0;
+    padding-top: 43vh;
   }
   .home_button {
     border-radius: 15px;
@@ -436,13 +433,13 @@ a:visited {
   width: 60%;
 }
 .aboutUs_section_img-whoWeAre {
-  background-image: url("../assets/aboutUsBg.png");
+  background-image: url("../assets/aboutUsBg.webp");
 }
 .aboutUs_section_img-aboutMatias {
-  background-image: url("../assets/aboutUsBg_2.png");
+  background-image: url("../assets/aboutUsBg_2.webp");
 }
 .aboutUs_section_img-methodology {
-  background-image: url("../assets/aboutUsBg_3.png");
+  background-image: url("../assets/aboutUsBg_3.webp");
 }
 .aboutUs_section_text {
   font-size: 16px;
@@ -635,28 +632,6 @@ a:visited {
 .joinUs_section_titleContainer {
   display: flex;
   flex-direction: column;
-}
-.joinUs_section_img {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 12px 0;
-}
-.joinUs_section_img > img {
-  width: 60%;
-}
-.joinUs_section_img-whoWeAre {
-  background-image: url("../assets/aboutUsBg.png");
-}
-.joinUs_section_img-aboutMatias {
-  background-image: url("../assets/aboutUsBg_2.png");
-}
-.joinUs_section_img-methodology {
-  background-image: url("../assets/aboutUsBg_3.png");
 }
 .joinUs_section_text {
   font-size: 16px;
@@ -1061,7 +1036,7 @@ a:visited {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  background-image: url("../assets/footerBackground.webp");
+  background-image: url("../assets/footerBackground_1.webp");
   background-size: cover;
   padding: 10px;
   padding-top: calc(100vh - 818.2px);
@@ -1142,7 +1117,7 @@ a:visited {
 @media (min-width: 740px) {
   .contactUs {
     margin-top: 50px;
-    background-image: url("../assets/footerBackground.webp");
+    background-image: url("../assets/footerBackground_1.webp");
     background-size: cover;
     padding: 175px 10px 40px;
     min-height: unset;

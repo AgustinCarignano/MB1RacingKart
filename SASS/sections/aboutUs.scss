@@ -118,7 +118,7 @@
 
 @media (min-width: 740px) {
   .aboutUs {
-    max-width: 1050px;
+    max-width: 950px;
     padding-top: 175px;
     &_title {
       font-size: 42px;
@@ -162,7 +162,6 @@
         }
       }
       &_subContainer {
-        // flex-direction: row-reverse;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         row-gap: 30px;

@@ -303,7 +303,6 @@ a:visited {
   min-height: 100vh;
   background-image: url("../assets/homeBackground.webp");
   background-size: cover;
-  background-attachment: fixed;
 }
 .home_container {
   display: flex;

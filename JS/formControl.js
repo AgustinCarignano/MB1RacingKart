@@ -21,32 +21,25 @@ form.addEventListener("submit", async (e) => {
     return formAlert.classList.remove("contactUs_form_alert-hidden");
   } else {
     submitBtn.disabled = true;
-    // const resp = await fetch(
-    //   "https://formsubmit.co/f41881c3c154fdad8f2a22b2169ad644",
-    //   {
-    //     method: "POST",
-    //     body: JSON.stringify({
-    //       nombre: fullName.value,
-    //       email: email.value,
-    //       telefono: phone.value,
-    //       mensaje: message.value,
-    //     }),
-    //     headers: {
-    //       "Content-type": "application/json; charset=UTF-8",
-    //     },
-    //   }
-    // );
-    // console.log(resp);
-    setTimeout(() => {
-      const name = fullName.value.split(" "[1]);
+    const resp = await fetch("https://formsubmit.co/mb1racingkart@gmail.com", {
+      method: "POST",
+      body: JSON.stringify({
+        nombre: fullName.value,
+        email: email.value,
+        telefono: phone.value,
+        mensaje: message.value,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    });
+    if (resp.ok) {
       restoreForm();
-      showMessage(name);
-      //modalWindow.classList.remove("contactUs_modal-hidden");
+      modalWindow.classList.remove("contactUs_modal-hidden");
       closeModalBehaviour();
-    }, 500);
-    // restoreForm();
-    // modalWindow.classList.remove("contactUs_modal-hidden");
-    // closeModalBehaviour();
+    } else {
+      console.error(resp.status);
+    }
   }
 });
 

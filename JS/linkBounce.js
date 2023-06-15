@@ -9,17 +9,17 @@ for (let i = 0; i < links.length; i++) {
   });
 }
 
-function moveToSection(link, offset, extraBounce) {
+function moveToSection(link, offset, virtualPadding = 0) {
   const { moveto } = link.dataset;
   const section = document.querySelector(`#${moveto}`);
   const cord = section.getBoundingClientRect();
-  const target = window.scrollY + cord.top;
+  if (Math.abs(cord.top) < 1) return;
+  const target = window.scrollY + cord.top - virtualPadding;
   let bounce = target > window.scrollY ? offset : -offset;
-  const moveTo = window.scrollY + cord.top + bounce;
-  const timeToTarget = 220 * Math.log10(Math.abs(cord.top));
+  const moveTo = target + bounce;
+  const timeToTarget = 128 * Math.log(Math.abs(cord.top)) - 274.7;
   window.scrollTo(0, moveTo);
   setTimeout(() => {
-    if (extraBounce) bounce = extraBounce;
     window.scrollTo(0, window.scrollY - bounce);
   }, timeToTarget);
 }

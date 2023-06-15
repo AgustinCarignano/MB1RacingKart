@@ -2,8 +2,8 @@ const menuAboutButtons = document.querySelectorAll(".aboutUs_section_title");
 const menuJoinButtons = document.querySelectorAll(".joinUs_section_title");
 const cta_methodology = document.querySelector("#cta_methodology");
 const cta_joinUs = document.querySelector("#cta_joinUs");
-//import "./linkBounce.js";
-//const moveTofunction = require(moveToSection);
+const linkToMechanicService = document.querySelector("#linkToMechanicService");
+const linkToTrackService = document.querySelector("#linkToTrackService");
 
 const menuButtons = [...menuAboutButtons, ...menuJoinButtons];
 
@@ -25,19 +25,43 @@ for (let i = 0; i < menuButtons.length; i++) {
 
 cta_methodology.addEventListener("click", (e) => {
   e.preventDefault();
-  const bounce = window.screen.width > 740 ? 150 : 50;
-  moveToSection(cta_methodology, 50, bounce);
-  callToAction("methodology");
+  const virtualPadding = window.screen.width > 740 ? 175 : 60;
+  moveToSection(cta_methodology, 50, virtualPadding);
+  callToAction(
+    "methodology",
+    ".aboutUs_section_title",
+    ".aboutUs_section_container"
+  );
 });
 cta_joinUs.addEventListener("click", (e) => {
   e.preventDefault();
   moveToSection(cta_joinUs, 50);
 });
+linkToMechanicService.addEventListener("click", (e) => {
+  e.preventDefault();
+  const virtualPadding = window.screen.width > 740 ? 175 : 60;
+  moveToSection(linkToMechanicService, 50, virtualPadding);
+  callToAction(
+    "mechanicService",
+    ".joinUs_section_title",
+    ".joinUs_section_container"
+  );
+});
+linkToTrackService.addEventListener("click", (e) => {
+  e.preventDefault();
+  const virtualPadding = window.screen.width > 740 ? 175 : 60;
+  moveToSection(linkToTrackService, 50, virtualPadding);
+  callToAction(
+    "trackService",
+    ".joinUs_section_title",
+    ".joinUs_section_container"
+  );
+});
 
-function callToAction(sectionId) {
-  const methodology = document.querySelector(`#${sectionId}`);
-  const button = methodology.querySelectorAll(".aboutUs_section_title");
-  const container = methodology.querySelectorAll(".aboutUs_section_container");
+function callToAction(sectionId, btnClass, containerClass) {
+  const element = document.querySelector(`#${sectionId}`);
+  const button = element.querySelectorAll(btnClass);
+  const container = element.querySelectorAll(containerClass);
   const height = container[0].scrollHeight;
   if (!container[0].classList.contains("menuOpened")) {
     container[0].classList.add("menuOpened");

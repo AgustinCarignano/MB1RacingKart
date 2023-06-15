@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="En MB1 Racing Kart somos más que un equipo de competición, somos una comunidad que comparte la misma pasión, las mismas ganas de crecer, de viajar, de entrenar, de competir y de lograr ser mejores cada día."
+    />
+    <meta
+      name="keywords"
+      content="karting, equipo, competición, pasión, entrenar, campeonato, campeon, Sunchales, Kartódromo"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -39,7 +47,7 @@
           </li>
           <li class="header_links_item">
             <a class="header_links_anchor" href="#joinUs" data-moveTo="joinUs"
-              >FORMA PARTE</a
+              >FORMÁ PARTE</a
             >
           </li>
           <li class="header_links_item">
@@ -55,7 +63,7 @@
               class="header_links_anchor"
               href="#contactUs"
               data-moveTo="contactUs"
-              >CONTÁCTANOS</a
+              >CONTACTANOS</a
             >
           </li>
         </ul>
@@ -80,7 +88,7 @@
               href="#joinUs"
               id="toJoin"
               data-moveTo="joinUs"
-              >FORMA PARTE</a
+              >FORMÁ PARTE</a
             >
           </li>
           <li class="header_links_item">
@@ -98,7 +106,7 @@
               href="#contactUs"
               id="toContact"
               data-moveTo="contactUs"
-              >CONTÁCTANOS</a
+              >CONTACTANOS</a
             >
           </li>
         </ul>
@@ -112,7 +120,7 @@
             <button class="home_button">METODOLOGÍA</button>
           </a>
           <a href="#joinUs" id="cta_joinUs" data-moveTo="joinUs">
-            <button class="home_button">FORMA PARTE</button>
+            <button class="home_button">FORMÁ PARTE</button>
           </a>
         </div>
       </section>
@@ -324,7 +332,7 @@
             alt="Matías analizando datos de telemetría"
           />
         </figcaption>
-        <section class="joinUs_section">
+        <section class="joinUs_section" id="mechanicService">
           <h3 class="joinUs_section_title">
             Servicio Mecánico
             <span></span>
@@ -341,8 +349,8 @@
             </div>
           </div>
         </section>
-        <section class="joinUs_section">
-          <h3 class="joinUs_section_title">
+        <section class="joinUs_section" id="trackService">
+          <h3 class="joinUs_section_title" id="trackService">
             Servicio atención en pista
             <span></span>
           </h3>
@@ -355,10 +363,7 @@
                   Visualización y Análisis del Circuito en Conjunto con el
                   Piloto.
                 </li>
-                <li>
-                  Alquiler y/o Análisis de Adquisición de Datos. (Más info en
-                  Metodología)
-                </li>
+                <li>Alquiler y/o Análisis de Adquisición de Datos.</li>
               </ul>
             </div>
           </div>
@@ -371,8 +376,22 @@
           <div class="joinUs_section_container">
             <div class="joinUs_section_list">
               <ul>
-                <li>Servicio Mecánico.</li>
-                <li>Servicio de Atención en Pista.</li>
+                <li>
+                  <a
+                    href="#mechanicService"
+                    id="linkToMechanicService"
+                    data-moveTo="mechanicService"
+                    >Servicio Mecánico.</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#trackService"
+                    id="linkToTrackService"
+                    data-moveTo="trackService"
+                    >Servicio de Atención en Pista.</a
+                  >
+                </li>
                 <li>Traslado del Karting.</li>
                 <li>Herramientas y Box.</li>
                 <li>Servicio de Adquisición y Análisis de Datos.</li>
@@ -765,12 +784,12 @@
 
       <section class="contactUs" id="contactUs">
         <div class="contactUs_largeContainer">
-          <h2 class="contactUs_title">CONTÁCTANOS</h2>
+          <h2 class="contactUs_title">CONTACTANOS</h2>
           <form class="contactUs_form" id="contactForm">
             <p class="contactUs_form_text">
               Si estás interesado en formar parte del equipo o buscás más
               información, podés ponerte en contacto llenando el formulario o
-              simplimente clickeá en nuestro Link a Whatsapp.
+              simplemente clickeá en nuestro Link a Whatsapp.
             </p>
             <label class="contactUs_form_label" for="name">NOMBRE:</label>
             <div class="contactUs_form_inputContainer" id="nameContainer">
@@ -855,13 +874,17 @@
             <div class="contactUs_media">
               <h2 class="contactUs_media_title">SEGUINOS:</h2>
               <div class="contactUs_media_container">
-                <a href="#"
+                <a
+                  href="https://www.facebook.com/profile.php?id=100087033818268&mibextid=ZbWKwL"
+                  target="_blank"
                   ><img
                     class="contactUs_media_icon"
                     src="./assets/facebookIcon.svg"
                     alt="Icono de facebook"
                 /></a>
-                <a href="#"
+                <a
+                  href="https://www.instagram.com/mb1_racingkart/?igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                  target="_blank"
                   ><img
                     class="contactUs_media_icon"
                     src="./assets/instagramIcon.svg"
@@ -869,13 +892,13 @@
                 /></a>
                 <div class="contactUs_media_icon-placeholder"></div>
                 <a
-                  href="https://wa.me/###?text=I'm%20interested%20in%20your%20car%20for%20sale"
+                  href="https://wa.me/5493493498430"
                   target="_blank"
                   class="contactUs_media_icon-wsp"
                   ><img
                     class="contactUs_media_icon"
                     src="./assets/wspIcon.svg"
-                    alt=""
+                    alt="Icono de whatsapp"
                 /></a>
               </div>
             </div>

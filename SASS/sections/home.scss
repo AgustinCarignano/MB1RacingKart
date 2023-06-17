@@ -30,6 +30,20 @@
 @media (min-width: 740px) {
   .home {
     &_container {
+      gap: 40px;
+      padding-top: 40vh;
+    }
+    &_button {
+      width: 375px;
+      padding: 30px 15px;
+      font-size: 35px;
+      line-height: 35px;
+    }
+  }
+}
+@media (min-width: 1500px) {
+  .home {
+    &_container {
       gap: 50px;
       padding-top: 43vh;
     }

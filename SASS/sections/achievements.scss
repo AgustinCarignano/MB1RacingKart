@@ -51,7 +51,7 @@
       justify-content: space-between;
       align-items: center;
       width: 80%;
-      margin: 30px auto;
+      margin: 20px auto;
       gap: 70px;
       &_picture {
         width: 100%;
@@ -75,11 +75,72 @@
 
 @media (min-width: 740px) {
   .achievements {
+    max-width: 850px;
+    padding: 140px 10px 80px;
+    &_title {
+      font-size: 35px;
+      text-align: left;
+    }
+    &_slider {
+      padding-bottom: 40px;
+      & .swiper-pagination {
+        padding: 0;
+        top: unset;
+        bottom: 0px;
+        & .swiper-pagination-bullet {
+          width: 15px;
+          height: 15px;
+          margin: 0 10px;
+        }
+      }
+      &_control {
+        width: 35px;
+        top: 200px;
+        z-index: 10;
+        cursor: pointer;
+        & > img {
+          width: 100%;
+        }
+      }
+      & .control-prev {
+        left: 30px;
+        padding-bottom: calc((100% - 600px) / 5);
+      }
+      & .control-next {
+        right: 30px;
+        padding-top: calc((100% - 600px) / 5);
+      }
+    }
+    &_slide {
+      &_title {
+        font-size: 24px;
+        text-align: center;
+      }
+      &_figure {
+        gap: 50px;
+        &_picture {
+          aspect-ratio: 16/9;
+        }
+        &_img {
+          height: 100%;
+        }
+        &_footer {
+          max-width: 550px;
+          font-size: 18px;
+          min-height: 40px;
+          letter-spacing: 0.25%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .achievements {
     max-width: 950px;
     padding: 175px 10px 80px;
     &_title {
       font-size: 42px;
-      text-align: left;
     }
     &_slider {
       padding-bottom: 60px;

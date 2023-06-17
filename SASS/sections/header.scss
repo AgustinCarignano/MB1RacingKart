@@ -99,12 +99,17 @@
     &_brand {
       z-index: 10;
       &_img {
-        width: 192px;
+        width: 150px;
       }
     }
     &_kart {
       display: flex;
-      margin-left: -35px;
+      margin-left: -25px;
+      height: 70px;
+      &_lines {
+        height: 80%;
+        margin: auto 0;
+      }
       &_car {
         margin-left: -60px;
       }
@@ -123,10 +128,7 @@
       background-color: #000000bd;
       animation: none;
       border-radius: 0;
-      font-size: 30px;
-      // position: fixed;
-      // margin-top: -1px;
-      // top: 0px;
+      font-size: 25px;
       z-index: 100;
       &_visible {
         animation: none;
@@ -136,11 +138,36 @@
       }
       &-desktop {
         display: flex;
-        margin-top: 51px;
+        margin-top: 25px;
+        padding: 12px 0;
       }
     }
     &_button {
       display: none;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .header {
+    &_brand {
+      &_img {
+        width: 192px;
+      }
+    }
+    &_kart {
+      margin-left: -35px;
+      height: unset;
+      &_lines {
+        height: 100%;
+      }
+    }
+    &_links {
+      font-size: 30px;
+      &-desktop {
+        margin-top: 51px;
+        padding: 16px 0;
+      }
     }
   }
 }

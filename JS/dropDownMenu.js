@@ -25,7 +25,7 @@ for (let i = 0; i < menuButtons.length; i++) {
 
 cta_methodology.addEventListener("click", (e) => {
   e.preventDefault();
-  const virtualPadding = window.screen.width > 740 ? 175 : 60;
+  const virtualPadding = window.screen.width > 740 ? 125 : 60;
   moveToSection(cta_methodology, 50, virtualPadding);
   callToAction(
     "methodology",
@@ -39,8 +39,8 @@ cta_joinUs.addEventListener("click", (e) => {
 });
 linkToMechanicService.addEventListener("click", (e) => {
   e.preventDefault();
-  const virtualPadding = window.screen.width > 740 ? 175 : 60;
-  moveToSection(linkToMechanicService, 50, virtualPadding);
+  const virtualPadding = window.screen.width > 740 ? 125 : 60;
+  moveToSection(linkToMechanicService, 0, virtualPadding);
   callToAction(
     "mechanicService",
     ".joinUs_section_title",
@@ -49,8 +49,8 @@ linkToMechanicService.addEventListener("click", (e) => {
 });
 linkToTrackService.addEventListener("click", (e) => {
   e.preventDefault();
-  const virtualPadding = window.screen.width > 740 ? 175 : 60;
-  moveToSection(linkToTrackService, 50, virtualPadding);
+  const virtualPadding = window.screen.width > 740 ? 125 : 60;
+  moveToSection(linkToTrackService, 0, virtualPadding);
   callToAction(
     "trackService",
     ".joinUs_section_title",

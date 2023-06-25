@@ -2,6 +2,16 @@ const navButton = document.querySelector("#burgerBtn");
 const navbarLinks = document.querySelector("#mobileNavbar");
 const brand = document.querySelector("#brandLink");
 const kart = document.querySelector("#kart");
+const navbar = document.querySelector("#navbar");
+
+window.addEventListener("scroll", (e) => {
+  //if (screen.width / screen.height < 16 / 9) return;
+  if (window.scrollY > screen.height * 0.5) {
+    navbar.classList.add("smallHeader");
+  } else {
+    navbar.classList.remove("smallHeader");
+  }
+});
 
 navButton.addEventListener("click", () => {
   togleNavbar();

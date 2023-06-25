@@ -256,11 +256,15 @@ a:visited {
   }
   .header_navbar {
     justify-content: flex-start;
+    padding: 18px 36px;
+    padding-bottom: 52px;
   }
   .header_brand {
     z-index: 10;
+    transition: all 0.3s;
   }
   .header_brand_img {
+    transition: all 0.3s;
     width: 150px;
   }
   .header_kart {
@@ -275,9 +279,13 @@ a:visited {
   .header_kart_car {
     margin-left: -60px;
   }
+  .header_moveKart {
+    transition: all 0.3s;
+  }
   .header_moveKart > .header_kart_car {
     margin-left: -60px;
     animation: moveKart 2s ease-in-out 0s 1 forwards;
+    transition: all 0.3s;
   }
   .header_moveKart > .header_kart_lines {
     animation: moveLines 2s ease-in-out 0.03s 1 forwards;
@@ -298,30 +306,31 @@ a:visited {
   }
   .header_links-desktop {
     display: flex;
-    margin-top: 25px;
+    margin-top: 33px;
     padding: 12px 0;
+    transition: all 0.3s;
+  }
+  .header_links-desktop > div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1050px;
   }
   .header_button {
     display: none;
   }
-}
-@media (min-width: 1500px) {
-  .header_brand_img {
-    width: 192px;
+  .smallHeader > figure > a > img {
+    width: 80px;
   }
-  .header_kart {
-    margin-left: -35px;
-    height: unset;
+  .smallHeader > .header_kart {
+    height: 35px;
+    margin-left: -12px;
   }
-  .header_kart_lines {
-    height: 100%;
+  .smallHeader > .header_kart .header_kart_car {
+    margin-left: -30px;
   }
-  .header_links {
-    font-size: 30px;
-  }
-  .header_links-desktop {
-    margin-top: 51px;
-    padding: 16px 0;
+  .smallHeader > .header_links-desktop {
+    transform: translateY(-60%);
   }
 }
 .home {
@@ -400,11 +409,13 @@ a:visited {
   font-family: "Karla", sans-serif;
   letter-spacing: 0.5%;
   text-align: center;
-  margin: 0 15px;
+  margin: 0 auto;
+  width: 80%;
 }
 .aboutUs_img {
   width: 80%;
   margin: 20px auto;
+  text-align: center;
 }
 .aboutUs_img > img {
   width: 100%;
@@ -526,19 +537,26 @@ a:visited {
 
 @media (min-width: 740px) {
   .aboutUs {
-    max-width: 850px;
-    padding-top: 140px;
+    max-width: 1050px;
+    padding-top: 120px;
   }
   .aboutUs_title {
-    font-size: 35px;
+    font-size: 42px;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .aboutUs_text {
     font-size: 20px;
+    line-height: 30px;
+    max-width: 680px;
   }
   .aboutUs_img {
     margin-bottom: 35px;
+    max-width: 680px;
+  }
+  .aboutUs_section {
+    max-width: 930px;
+    margin: 0 auto;
   }
   .aboutUs_section_title {
     font-size: 25px;
@@ -587,54 +605,6 @@ a:visited {
     margin: 0;
   }
 }
-@media (min-width: 1440px) {
-  .aboutUs {
-    max-width: 950px;
-    padding-top: 175px;
-  }
-  .aboutUs_title {
-    font-size: 42px;
-    margin-bottom: 30px;
-  }
-  .aboutUs_text {
-    font-size: 22px;
-  }
-  .aboutUs_img {
-    margin-bottom: 42px;
-  }
-  .aboutUs_section_title {
-    font-size: 30px;
-  }
-  .aboutUs_section_subMenuTitle {
-    font-size: 30px;
-  }
-  .aboutUs_section_subMenuSubTitle {
-    font-size: 24px;
-    margin-top: 15px;
-  }
-  .aboutUs_section_container {
-    margin-top: 32px;
-  }
-  .aboutUs_section_text {
-    font-size: 22px;
-    line-height: 40px;
-    letter-spacing: 0.009em;
-  }
-  .aboutUs_section_list > p {
-    font-size: 22px;
-  }
-  .aboutUs_section_list > ul > li {
-    font-size: 22px;
-    margin: 15px 0;
-  }
-  .aboutUs_section_subContainer {
-    margin: 30px 20px 30px auto;
-  }
-  .aboutUs_section_subContainer_item {
-    font-size: 24px;
-    margin: 10px 0;
-  }
-}
 .joinUs {
   padding: 60px 0px 10px;
   max-width: 962px;
@@ -655,11 +625,13 @@ a:visited {
   font-family: "Karla", sans-serif;
   letter-spacing: 0.5%;
   text-align: center;
-  margin: 0 15px;
+  margin: 0 auto;
+  width: 80%;
 }
 .joinUs_img {
   width: 80%;
   margin: 20px auto;
+  text-align: center;
 }
 .joinUs_img > img {
   width: 100%;
@@ -762,19 +734,26 @@ a:visited {
 
 @media (min-width: 740px) {
   .joinUs {
-    max-width: 850px;
-    padding-top: 140px;
+    max-width: 1050px;
+    padding-top: 120px;
   }
   .joinUs_title {
-    font-size: 35px;
+    font-size: 42px;
     text-align: left;
     margin-bottom: 20px;
   }
   .joinUs_text {
     font-size: 20px;
+    line-height: 30px;
+    max-width: 680px;
   }
   .joinUs_img {
     margin-bottom: 35px;
+    max-width: 680px;
+  }
+  .joinUs_section {
+    max-width: 930px;
+    margin: 0 auto;
   }
   .joinUs_section_title {
     font-size: 25px;
@@ -824,47 +803,6 @@ a:visited {
     font-size: 18px;
     margin: 3px 0;
     line-height: 33px;
-  }
-}
-@media (min-width: 1500px) {
-  .joinUs {
-    padding-top: 175px;
-    max-width: 950px;
-  }
-  .joinUs_title {
-    font-size: 42px;
-    margin-bottom: 30px;
-  }
-  .joinUs_text {
-    font-size: 22px;
-  }
-  .joinUs_img {
-    margin-bottom: 42px;
-  }
-  .joinUs_section_title {
-    font-size: 30px;
-  }
-  .joinUs_section_subMenuTitle {
-    font-size: 30px;
-  }
-  .joinUs_section_subMenuSubTitle {
-    font-size: 30px;
-  }
-  .joinUs_section_container {
-    margin-top: 32px;
-  }
-  .joinUs_section_text {
-    font-size: 22px;
-    line-height: 40px;
-    letter-spacing: 0.009em;
-  }
-  .joinUs_section_listContainer {
-    margin-top: 50px;
-  }
-  .joinUs_section_list > ul > li {
-    font-size: 22px;
-    margin: 5px 0;
-    line-height: 38px;
   }
 }
 .achievements {
@@ -947,14 +885,15 @@ a:visited {
 
 @media (min-width: 740px) {
   .achievements {
-    max-width: 850px;
-    padding: 140px 10px 80px;
+    max-width: 1050px;
+    padding: 120px 10px 80px;
   }
   .achievements_title, .contactUs_title, .achievements_slide_title {
-    font-size: 35px;
+    font-size: 42px;
     text-align: left;
   }
   .achievements_slider {
+    max-width: 950px;
     padding-bottom: 40px;
   }
   .achievements_slider .swiper-pagination {
@@ -969,7 +908,7 @@ a:visited {
   }
   .achievements_slider_control {
     width: 35px;
-    top: 200px;
+    top: 180px;
     z-index: 10;
     cursor: pointer;
   }
@@ -992,6 +931,7 @@ a:visited {
     gap: 50px;
   }
   .achievements_slide_figure_picture {
+    width: 90%;
     aspect-ratio: 16/9;
   }
   .achievements_slide_figure_img {
@@ -1005,15 +945,8 @@ a:visited {
   }
 }
 @media (min-width: 1500px) {
-  .achievements {
-    max-width: 950px;
-    padding: 175px 10px 80px;
-  }
-  .achievements_title, .contactUs_title, .achievements_slide_title {
-    font-size: 42px;
-  }
   .achievements_slider {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
   .achievements_slider .swiper-pagination {
     padding: 0;
@@ -1047,7 +980,7 @@ a:visited {
     text-align: center;
   }
   .achievements_slide_figure {
-    gap: 50px;
+    gap: 40px;
   }
   .achievements_slide_figure_picture {
     aspect-ratio: 16/9;
@@ -1062,9 +995,9 @@ a:visited {
     letter-spacing: 0.25%;
   }
 }
-@media (min-width: 2000px) {
+@media (min-width: 1800px) {
   .achievements {
-    min-height: unset;
+    min-height: 90vh;
   }
 }
 .contactUs {
@@ -1290,7 +1223,7 @@ a:visited {
     margin-top: 50px;
     background-image: url("../assets/footerBackground_1.webp");
     background-size: cover;
-    padding: 175px 10px 40px;
+    padding: 125px 10px 40px;
     min-height: unset;
   }
   .contactUs_largeContainer {
@@ -1298,7 +1231,7 @@ a:visited {
     grid-template-columns: 6fr 4fr;
     grid-template-rows: 70px 1fr;
     max-width: 1200px;
-    row-gap: 6px;
+    row-gap: 15px;
     column-gap: 22px;
     margin: 0 auto;
     min-height: calc(100vh - 225px);

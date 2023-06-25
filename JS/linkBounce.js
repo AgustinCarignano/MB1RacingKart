@@ -1,8 +1,7 @@
 const links = document.querySelectorAll(".header_links_anchor");
 
 for (let i = 0; i < links.length; i++) {
-  if (links[i].dataset.moveto === "contactUs" && window.screen.height >= 915)
-    continue;
+  if (links[i].dataset.moveto === "contactUs" && screen.height >= 915) continue;
   links[i].addEventListener("click", (e) => {
     e.preventDefault();
     moveToSection(links[i], 50);

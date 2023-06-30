@@ -1367,6 +1367,7 @@ a:visited {
   .contactUs_media_icon-wsp {
     right: calc(50vw - 680px);
     bottom: 63px;
+    translate: calc(50vw - 750px);
   }
 }
 @media (min-width: 1700px) {
@@ -1378,6 +1379,7 @@ a:visited {
   }
   .contactUs_media_icon-wsp {
     right: calc(50vw - 790px);
+    translate: none;
   }
 }
 

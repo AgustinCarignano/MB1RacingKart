@@ -347,7 +347,7 @@
     &_media_icon-wsp {
       right: calc(50vw - 680px);
       bottom: 63px;
-      //translate: calc(50vw - 750px);
+      translate: calc(50vw - 750px);
     }
   }
 }
@@ -363,6 +363,7 @@
     }
     &_media_icon-wsp {
       right: calc(50vw - 790px);
+      translate: none;
     }
   }
 }
